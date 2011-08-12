@@ -10,6 +10,7 @@
 */
 
 class Gravatar {
+	
 	private $base_url = 'http://www.gravatar.com/';
 	private $secure_base_url = 'https://secure.gravatar.com/';
 
