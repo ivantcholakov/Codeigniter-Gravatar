@@ -1,5 +1,5 @@
-Gravatar library for Codeigniter by Ryan Marshall
-=================================================
+Gravatar library for Codeigniter
+================================
 
 To use simply load the library as usual in your controller
 
