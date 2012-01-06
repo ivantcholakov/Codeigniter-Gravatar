@@ -3,7 +3,7 @@
 * Irealms.co.uk Gravatar library for use with codeigniter
 * 
 * @author Ryan Marshall <ryan@irealms.co.uk>
-* @link www.irealms.co.uk
+* @link http://www.irealms.co.uk
 * @package codeigniter
 * @subpackage gravatar
 *
