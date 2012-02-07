@@ -143,5 +143,5 @@ class Gravatar {
 		}
 	}
 }
-/* End of file gravatar_helper.php */
-/* Location: ./application/libraries/gravatar.php */
+/* End of file Gravatar.php */
+/* Location: ./application/libraries/Gravatar.php */
