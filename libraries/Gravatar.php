@@ -50,28 +50,37 @@ class Gravatar {
     {
         $hash = $this->set_email($email);
         
-        if ($hash === NULL) {
+        if ($hash === NULL) 
+        {
             // $hash has to be set to a value so the gravatar site can return a default image
             $hash = 'invalid_email';
         }
         
         $query_string = NULL;
         $options = array();
-        if ($rating !== NULL) {
+
+        if ($rating !== NULL) 
+        {
             $options['r'] = $rating;
         }
-        if ($size !== NULL) {
+
+        if ($size !== NULL) 
+        {
             $options['s'] = $size;
         }
-        if ($default_image !== NULL) {
+        
+        if ($default_image !== NULL) 
+        {
             $options['d'] = $default_image;
         }
         
-        if (count($options) > 0) {
+        if (count($options) > 0) 
+        {
             $query_string = '?'. http_build_query($options);
         }
 
-        if ($secure !== NULL) {
+        if ($secure !== NULL) 
+        {
             $base = $this->secure_base_url;
         }
         else
@@ -94,7 +103,8 @@ class Gravatar {
     {
         $hash = $this->set_email($email);
         
-        if ($hash === NULL) {
+        if ($hash === NULL) 
+        {
             // A hash value of NULL will return no xml so the method returns NULL
             return NULL;
         }
@@ -102,7 +112,8 @@ class Gravatar {
         libxml_use_internal_errors(TRUE);
         
         if ($fetch_method === 'file') {
-            if (ini_get('allow_url_fopen') == FALSE) {
+            if (ini_get('allow_url_fopen') == FALSE) 
+            {
                 return NULL;
             }
 
@@ -110,7 +121,8 @@ class Gravatar {
         }
 
         if ($fetch_method === 'curl') {
-            if ( ! function_exists('curl_init')) {
+            if ( ! function_exists('curl_init')) 
+            {
                 return NULL;
             }
             
