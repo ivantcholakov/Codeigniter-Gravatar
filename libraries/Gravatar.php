@@ -68,7 +68,7 @@ class Gravatar {
         {
             $options['s'] = $size;
         }
-        
+
         if ($default_image !== NULL) 
         {
             $options['d'] = $default_image;
@@ -111,7 +111,8 @@ class Gravatar {
         
         libxml_use_internal_errors(TRUE);
         
-        if ($fetch_method === 'file') {
+        if ($fetch_method === 'file') 
+        {
             if (ini_get('allow_url_fopen') == FALSE) 
             {
                 return NULL;
@@ -120,7 +121,8 @@ class Gravatar {
             $str = file_get_contents($this->base_url . $hash .'.xml');          
         }
 
-        if ($fetch_method === 'curl') {
+        if ($fetch_method === 'curl') 
+        {
             if ( ! function_exists('curl_init')) 
             {
                 return NULL;
