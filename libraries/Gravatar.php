@@ -71,7 +71,7 @@ class Gravatar {
 
         if ($default_image !== NULL) 
         {
-            $options['d'] = $default_image;
+            $options['d'] = urlencode($default_image);
         }
         
         if (count($options) > 0) 
