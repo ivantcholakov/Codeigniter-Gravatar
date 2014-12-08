@@ -23,8 +23,7 @@ class Gravatar {
      */
     public function set_email($email)
     {
-        $email = strtolower($email);
-        $email = trim($email);
+        $email = trim(strtolower($email));
 
         if( ! filter_var($email, FILTER_VALIDATE_EMAIL) === FALSE)
         {
