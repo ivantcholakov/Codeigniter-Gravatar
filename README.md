@@ -7,7 +7,7 @@ Usage
 Before usage simply load the library as usual in your controller or other context.
 
 ```php
-    $this->load->library('gravatar');
+$this->load->library('gravatar');
 ```
 
 After that you can call its public methods:
