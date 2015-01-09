@@ -16,7 +16,7 @@ After that you can call its public methods:
 echo '<br />';
 echo '<br />';
 
-$email = 'ivantcholakov@gmail.com';
+$email = 'put_email@here.com';
 
 $gravatar_url = $this->gravatar->get($email);
 
