@@ -220,19 +220,19 @@ class Gravatar {
         }
 
         $result = null;
+        $url = $this->secure_base_url.$this->create_hash($email).$format;
 
         if ($this->curl_exists) {
-
-            $url = $this->secure_base_url.$this->create_hash($email).$format;
-
             $ch = curl_init();
 
             $options = array(
-                CURLOPT_USERAGENT, $this->useragent,
+                CURLOPT_URL => $url,
+                CURLOPT_USERAGENT => $this->useragent,
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_POST => true,
                 CURLOPT_POSTFIELDS => array(),
-                CURLOPT_URL => $url,
+                CURLOPT_SSL_VERIFYPEER => false,
+				CURLOPT_SSL_VERIFYHOST => false,
                 CURLOPT_TIMEOUT => 3,
             );
 
@@ -255,9 +255,6 @@ class Gravatar {
             }
 
         } elseif ($this->allow_url_fopen) {
-
-            $url = $this->base_url.$this->create_hash($email).$format;
-
             $options = array(
                 'http' => array(
                     'method' => 'GET',
