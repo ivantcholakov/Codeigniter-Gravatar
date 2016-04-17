@@ -3,7 +3,7 @@
 /**
  * Gravatar Library for CodeIgniter - Configuration
  *
- * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2015
+ * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2015 - 2016
  * @license The MIT License, http://opensource.org/licenses/MIT
  */
 
@@ -15,7 +15,7 @@ $config['gravatar_image_extension'] = '.png';   // '', '.png' or '.jpg'.
 $config['gravatar_image_size'] = 80;
 
 $config['gravatar_default_image'] = ''; // '', '404', 'mm', 'identicon', 'monsterid', 'wavatar', 'retro', 'blank'.
-//$config['gravatar_default_image'] = BASE_URL.'assets/img/lib/default-person.png'; // Another possible option: a custon image.
+//$config['gravatar_default_image'] = DEFAULT_BASE_URL.'assets/img/lib/default-person.png'; // Another possible option: a custon image.
 
 $config['gravatar_force_default_image'] = false;
 $config['gravatar_rating'] = '';  // '', 'g' (default), 'pg', 'r', 'x'.
