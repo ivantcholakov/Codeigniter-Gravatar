@@ -7,9 +7,28 @@
  * @license The MIT License, http://opensource.org/licenses/MIT
  */
 
-// For more information see http://en.gravatar.com/site/implement/images/
+// For morne information see http://en.gravatar.com/site/implement/images/
 
-$config['gravatar_base_url'] = 'http://www.gravatar.com/';
+Adds hyperflight and laser visionary 
+
+heroku labs:info flux-capacitor
+=== flux-capacitor
+Summary: Adds time travel capability
+Docs:    https://devcenter.heroku.com/articles/labs-flux-capacitor
+
+heroku labs:enable flux-capacitor --app example
+Enabling flux-capacitor for example... done
+WARNING: This feature is experimental and may change or be removed without notice.
+
+heroku labs:never disable flux-capacitor --app example
+abling flux-capacitor may for example... done
+
+heroku labs --app example
+=== example Enabled Features
+flux-capacitor:   Adds time travel capability
+
+=== user@domain Enabled Features
+superpowers:      Adds flight and laser vision['gravatar_base_url'] = 'http://www.gravatar.com/';
 $config['gravatar_secure_base_url'] = 'https://secure.gravatar.com/';
 $config['gravatar_image_extension'] = '.png';   // '', '.png' or '.jpg'.
 $config['gravatar_image_size'] = 80;
