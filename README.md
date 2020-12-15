@@ -64,6 +64,6 @@ http://iridadesign.com/starter-public-edition-4/www/playground/gravatar-test
 License Information
 -------------------
 
-Copyright (c) 2015 - 2016 Ivan Tcholakov, ivantcholakov@gmail.com  
+Copyright (c) 2015 - 2020 Ivan Tcholakov, ivantcholakov@gmail.com  
 Copyright (c) 2011 - 2015 Ryan Marshall, http://irealms.co.uk  
 License: The MIT License (MIT), http://opensource.org/licenses/MIT
