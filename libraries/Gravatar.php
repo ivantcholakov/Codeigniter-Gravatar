@@ -3,12 +3,12 @@
 /**
  * Gravatar Library for CodeIgniter
  *
- * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2015 - 2020
+ * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2015 - 2022
  * @author Ryan Marshall <ryan@irealms.co.uk>, 2011 - 2015, @link http://irealms.co.uk
  *
  * Code repository: @link https://github.com/ivantcholakov/Codeigniter-Gravatar
  *
- * @version 1.1.2
+ * @version 1.1.3
  *
  * @license The MIT License (MIT)
  * @link http://opensource.org/licenses/MIT
@@ -241,7 +241,7 @@ class Gravatar {
             }
         }
 
-        $format = trim($format);
+        $format = trim((string) $format);
 
         if ($format != '') {
             $format = '.'.ltrim($format, '.');
@@ -332,7 +332,7 @@ class Gravatar {
      */
     public function create_hash($email) {
 
-        return md5(strtolower(trim($email)));
+        return md5(strtolower(trim((string) $email)));
     }
 
     protected function is_https() {
@@ -369,7 +369,7 @@ class Gravatar {
      */
     public function set_email($email)
     {
-        $email = trim(strtolower($email));
+        $email = trim(strtolower((string) $email));
 
         if ( ! filter_var($email, FILTER_VALIDATE_EMAIL) === FALSE)
         {
