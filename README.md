@@ -56,14 +56,9 @@ Requirements
 
 CodeIgniter 2.x or CodeIgniter 3.x
 
-Live Demo
----------
-
-http://iridadesign.com/starter-public-edition-4/www/playground/gravatar-test
-
 License Information
 -------------------
 
-Copyright (c) 2015 - 2022 Ivan Tcholakov, ivantcholakov@gmail.com  
+Copyright (c) 2015 - 2023 Ivan Tcholakov, ivantcholakov@gmail.com  
 Copyright (c) 2011 - 2015 Ryan Marshall, http://irealms.co.uk  
 License: The MIT License (MIT), http://opensource.org/licenses/MIT

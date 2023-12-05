@@ -20,6 +20,7 @@ if (!function_exists('gravatar')) {
         $gravatar_url = $ci->gravatar->get($email, $size, $default, null, $rating);
 
         if ($url_only) {
+
             return $gravatar_url;
         }
 
